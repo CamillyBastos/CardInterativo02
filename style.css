@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 181, 227);
+display: flex;
+  justify-content: center; /* centro horizontal */
+  align-items: center;     /* centro vertical */
+  height: 100vh;
+}
+.card{
+padding: 10 10px;
+    background-color: rgb(173, 0, 72);
+    width: 400px;
+    border: 6px solid black;
+    border-radius: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    /* A magica da animação começa aqui */
+    transition: transform 0.3s ease,box-shadow  0.3s ease;
+    /* Esconder qualquer conteúdo filho que possivelmente saia dos limites do card */
+    overflow: hidden;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cabecalho {
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 25px;
+}
+
+.cabecalho img{
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+   border: rgb(0, 0, 0) 3px solid;
+   box-shadow: rgba(0, 0,0, 25) 0px 4px 4px; 
+    
+}
+   
+.cabecalho h1 {
+font-size: 20px;
+}
+
+.btns{
+
+display:flex;
+flex-direction: column;
+gap: 30px;
+align-items: center;
+}
+
+.btns a{
+    
+    display: flex;
+    width: 240px;
+    color: black;
+    background-color: rgb(226, 121, 147);
+    justify-content: center;
+    padding: 20px;
+    border-radius: 100px;
+    border: black solid 2px;
+    box-shadow: black 5px 5px 0;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.btns a:hover{
+    background-color: rgb(141, 4, 123);
+}
